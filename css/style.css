@@ -1,32 +1,48 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+body {
     background: hsl(43, 100%, 57%);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.container{
+
+.container {
     width: 90%;
-    margin: auto; 
+    margin: auto;
     display: flex;
 }
-.groceries{
+
+.groceries {
     width: 60%;
     min-height: 100vh;
     margin: auto;
     background: white;
     box-shadow: 10px 10px 24px 0 black;
+    position: relative;
 }
-.groceries h1{
+
+.deleteIcon {
+    position: absolute;
+    color: red;
+    right: 0;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.groceries h1 {
     font-size: 2.5rem;
     margin-top: 1em;
+    margin-bottom: 1em;
 }
-.groceries i{
+
+.groceries i {
     font-size: 2rem;
     color: orange;
 }
-.groceries input{
+
+.groceries input {
     font-family: inherit;
     outline: 0;
     border: 0;
@@ -34,9 +50,14 @@ body{
     width: 70%;
     font-size: 1.5rem;
 }
-#allItems h2{
-    margin-right: 10px;
-    margin-left: 50px;
-    margin-top: 15px;
-    font-size: 2rem;
+
+#allItems {
+    font-size: 1.5rem;
+    padding: 20px;
+}
+
+@media(max-width:670px) {
+    .groceries {
+        width: 80%;
+    }
 }
